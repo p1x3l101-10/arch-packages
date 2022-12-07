@@ -1,11 +1,11 @@
 
 # Maintainer: Scott Blatt <scott.blatt.0b10@gmail.com>
-pkgname=arch-tor-auto-socket
+pkgname=tor-autosocket
 pkgver=1.0
 pkgrel=1
 pkgdesc="Automated starting and stopping of tor on port 9050 "
 arch=('any')
-url="https://github.com/p1x3l101-10/arch-tor-auto-socket"
+url="https://github.com/p1x3l101-10/tor-autosocket"
 license=('Unlicense')
 depends=(
   'systemd'
