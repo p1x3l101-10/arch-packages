@@ -3,7 +3,7 @@
 pkgname=tor-autosocket
 pkgver=1.0
 pkgrel=1
-pkgdesc="Automated starting and stopping of tor on port 9050 "
+pkgdesc="Automated starting and stopping of tor on port 9050"
 arch=('any')
 url="https://github.com/p1x3l101-10/tor-autosocket"
 license=('Unlicense')
@@ -18,6 +18,6 @@ package() {
   cd "$srcdir/$pkgname"
   install -Dm644 torrc.socket.conf "$pkgdir/etc/tor/torrc.socket.conf"
   install -Dm644 tor-socket.service "$pkgdir/usr/lib/systemd/system/tor-socket.service"
-  install -Dm644 tor-proxy.service "$pkgdir/usr/lib/systemd/system/tor-proxy.service"
-  install -Dm644 tor-proxy.socket "$pkgdir/usr/lib/systemd/system/tor-proxy.socket"
+  install -Dm644 tor-autosocket.service "$pkgdir/usr/lib/systemd/system/tor-autosocket.service"
+  install -Dm644 tor-autosocket.socket "$pkgdir/usr/lib/systemd/system/tor-autosocket.socket"
 }
